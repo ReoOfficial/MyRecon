@@ -1,10 +1,10 @@
-import argparse 
+import argparse
 
-def build_parse() -> argparse.ArgumentParser:
+
+def build_parser() -> argparse.ArgumentParser:
     """
     Create and configure the command-line argument parser.
     """
-
     parser = argparse.ArgumentParser(
         prog="MyRecon",
         description=(
@@ -26,6 +26,5 @@ def parse_arguments() -> argparse.Namespace:
     """
     Parse command-line arguments provided by the user.
     """
-
-    parser = build_parse()
+    parser = build_parser()
     return parser.parse_args()
